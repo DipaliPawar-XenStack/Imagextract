@@ -1,0 +1,29 @@
+# Conda package metadata for IEL
+
+package:
+  name: imgxtract
+  version: "0.1"
+
+build:
+  number: 1
+  script: python setup.py install
+
+
+
+requirements:
+  build:
+    - git
+    - python
+    - setuptools
+
+  run:
+    - python
+    - beautifulsoup4
+    - requests
+
+about:
+  
+  license: Apache License, Version 2.0
+  license_file: LICENSE
+  summary: A framework for building intelligence extraction systems.
+
